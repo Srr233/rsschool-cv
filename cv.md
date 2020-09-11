@@ -95,28 +95,6 @@ My latest code:
         }
     }
     
-    return (
-    <View style={styles.app}>
-      <View>
-        <TextInput style={styles.input} placeholder="Введите имя" defaultValue={newPerson} onChangeText={setNewPerson}/>
-        <Button style={styles.buttonAdd} onPress={addPerson} title="Добавить"></Button>
-      </View>
-      <ScrollView style={styles.scroll}>
-        {people.map(person => (
-                <TouchableOpacity
-                    onPress={() => {
-                        isTrue = true;
-                        navigation.navigate('User', person)
-                        }} key={person.id}>
-                    <View style={styles.person}>
-                        <Text style={styles.personName}>{person.name}</Text>
-                    </View>
-                </TouchableOpacity>
-            ))}
-      </ScrollView>
-    </View>
-    )}
-
 ```
 
 
