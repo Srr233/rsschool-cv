@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <header>
+                <h1>Siarhei Saltanovich</h1>
+                <img src="./images/myPhoto.jpg" alt="I'm" height="600" width="1024">
+            </header>
+        <main>
+            <article>
+                <h3>My contact</h3>
+                <ul>
+                    <li><pre>Number: +375 (29) 127 07 09</pre></li>
+                    <li>
+                        Social networks:
+                        <ul>
+                            <li><a href="https://vk.com/sr233">VK</a></li>
+                            <li><a href="https://www.facebook.com/sergey.saltanov">Facebook</a></li>
+                            <li>Email: Sr233@yandex.ru</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Summary</h3>
+                <p>My first and foremost goal become a Junior Developer! I want to create some of cool programs! I see that, I can try to
+                get it and I need that! I make sure, I will be a good programmer.</p>
+                <h3>Skills</h3>
+                <p>I know only one programming language: JavaScript</p>
+                <ul>
+                    <li>Some frameworks</li>
+                    <ul>
+                        <li>Vue framework</li>
+                        <li>React Native framework</li>
+                    </ul>
+                </ul>
+                <p>And I have created react native app with expo for Android 
+                    <a href="https://expo.io/dashboard/sulti/builds/0b7453ca-5a64-4816-8f44-45b76bdd0eb4"></a></p>
+                    <p>My latest code:</p>
+                    <div>
+                        <pre><code>
+                            if(canGetData) {
+    getData().then(val => {
+        if (val !== undefined) {
+            getVal = val;
+            setPeople(JSON.parse(getVal));
+        }
+    });
+    canGetData = false;
+}
+
+if (typeof route.params[0] === 'string' && !route.params.hasOwnProperty('name') || route.params.name == '' && typeof route.params[0] === 'string') {
+    let deleteId = Object.values(route.params).join('');
+    let newArray = [];
+    if(deleteId > people[0].id) deleteId = deleteId.slice(0, 13)
+    for (let i = 0; i < people.length; i++) {
+        if (people[i].id === deleteId) {
+            continue;
+    }
+        newArray.push(people[i])
+    }
+    removeValue().then(() => {
+        if (newArray.length) { 
+            storeData(newArray);
+        }
+    });
+
+    setPeople(newArray);
+    console.log('удалили')
+
+    route.params = {};
+}
+
+if (route.params.name !== '' && route.params.name !== undefined && isTrue) {
+    isTrue = false;
+    let newArray = [];
+    for (let i = 0; i < people.length; i++) {
+        
+        if(people[i].id === route.params.id) {
+            let newObj = {
+                name: route.params.name,
+                uri: route.params.uri,
+                info: route.params.info,
+                id: route.params.id
+            };
+            newArray.push(newObj);
+
+            continue;
+        }
+        newArray.push(people[i])
+    }
+    setPeople(newArray);
+    storeData(newArray);
+    route.params = {};
+}
+
+const addPerson = () => {
+    if (newPerson) {
+            setPeople(prev => {
+                let newArrPers = [...prev, {
+                    name: newPerson,
+                    uri: '',
+                    info: '',
+                    id: Date.now().toString()
+                }]; 
+                storeData(newArrPers);
+                return newArrPers;
+            });
+        setNewPerson(prev => '');
+    }
+}
+</code></pre>
+                    </div>
+                    <h3>Experience</h3>
+                    <p>I have few months in world programs.</p>
+                    <h3>Education</h3>
+                    <p>I have secondary special education.</p>
+                    <h3>English</h3>
+                    <p>Pre-Intermediate - A2</p>
+            </article>
+        </main>
+        </div>
+        <footer>
+            <p>2020 RSSchool</p>
+        </footer>
+    </body>
+</html>
