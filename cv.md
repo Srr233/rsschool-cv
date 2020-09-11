@@ -19,7 +19,8 @@ And I have created react native app with expo for Android: [MyApp](https://expo.
 
 My latest code:
 
-    ```if(canGetData) {
+    ```javascript
+    if(canGetData) {
         getData().then(val => {
             if (val !== undefined) {
                 getVal = val;
