@@ -78,22 +78,6 @@ My latest code:
         storeData(newArray);
         route.params = {};
     }
-
-    const addPerson = () => {
-        if (newPerson) {
-                setPeople(prev => {
-                    let newArrPers = [...prev, {
-                        name: newPerson,
-                        uri: '',
-                        info: '',
-                        id: Date.now().toString()
-                    }]; 
-                    storeData(newArrPers);
-                    return newArrPers;
-                });
-            setNewPerson(prev => '');
-        }
-    }
     
 ```
 
