@@ -23,6 +23,7 @@ My latest code:
 
 
 ```javascript
+
     if(canGetData) {
         getData().then(val => {
             if (val !== undefined) {
@@ -115,6 +116,7 @@ My latest code:
       </ScrollView>
     </View>
     )}
+
 ```
 
 
