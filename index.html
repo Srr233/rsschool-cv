@@ -15,7 +15,6 @@
                     class="img"
                     src="https://sun6-13.userapi.com/c855224/v855224177/1108f2/yF-xMoSXv-s.jpg"
                     alt="I'm">
-
                 <section>
                     <h3>My contact</h3>
                     <ul>
@@ -32,7 +31,6 @@
                         </li>
                     </ul>
                 </section>
-
                 <section>
                     <h3>Summary</h3>
                     <p>
@@ -40,7 +38,6 @@
                         see that, I can try to get it and I need that! I make sure, I will be a good programmer.
                     </p>
                 </section>
-
                 <section>
                     <h3>Skills</h3>
                     <p>I know only one programming language: JavaScript</p>
@@ -54,12 +51,10 @@
                         </li>
                     </ul>
                 </section>
-
                 <p>
                     And I have created react native app with expo for Android
                     <a href="https://expo.io/dashboard/sulti/builds/0b7453ca-5a64-4816-8f44-45b76bdd0eb4">App</a>
                 </p>
-
                 <section>
                     <h3>My latest code:</h3>
                     <div class="code">
@@ -73,8 +68,7 @@
             });
             canGetData = false;
         }
-
-        if (typeof route.params[0] === 'string' &amp;&amp; !route.params.hasOwnProperty('name') 
+        if (typeof route.params[0] === 'string' &amp;&amp; !route.params.hasOwnProperty('name')
             || route.params.name == '' &amp;&amp; typeof route.params[0] === 'string') {
             let deleteId = Object.values(route.params).join('');
             let newArray = [];
@@ -86,17 +80,14 @@
                 newArray.push(people[i])
             }
             removeValue().then(() =&gt; {
-                if (newArray.length) { 
+                if (newArray.length) {
                     storeData(newArray);
                 }
             });
-
             setPeople(newArray);
             console.log('удалили')
-
             route.params = {};
         }
-
         if (route.params.name !== '' &amp;&amp; route.params.name !== undefined &amp;&amp; isTrue) {
             isTrue = false;
             let newArray = [];
@@ -110,7 +101,6 @@
                         id: route.params.id
                     };
                     newArray.push(newObj);
-
                     continue;
                 }
                 newArray.push(people[i])
@@ -119,7 +109,6 @@
             storeData(newArray);
             route.params = {};
         }
-
         const addPerson = () =&gt; {
             if (newPerson) {
                     setPeople(prev =&gt; {
@@ -138,17 +127,14 @@
                         </code></pre>
                     </div>
                 </section>
-
                 <section>
                     <h3>Experience</h3>
                     <p>I have few months in world programs.</p>
                 </section>
-
                 <section>
                     <h3>Education</h3>
                     <p>I have secondary special education.</p>
                 </section>
-
                 <section>
                     <h3>English</h3>
                     <p>Pre-Intermediate - A2</p>
