@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="./style.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet" >
         <title>Sr233</title>
     </head>
     <body>
         <div class="wrapper">
             <header>
-                <h1 style="background-color: slategray">information about me</h1>
+                <h1 class="h1-header">information about me</h1>
             </header>
             <main>
                 <h3>Siarhei Saltanovich</h3>
@@ -75,8 +75,8 @@
             canGetData = false;
         }
 
-        if (typeof route.params[0] === 'string' && !route.params.hasOwnProperty('name') 
-            || route.params.name == '' && typeof route.params[0] === 'string') {
+        if (typeof route.params[0] === 'string' &amp;&amp; !route.params.hasOwnProperty('name') 
+            || route.params.name == '' &amp;&amp; typeof route.params[0] === 'string') {
             let deleteId = Object.values(route.params).join('');
             let newArray = [];
             if(deleteId &gt; people[0].id) deleteId = deleteId.slice(0, 13)
@@ -98,7 +98,7 @@
             route.params = {};
         }
 
-        if (route.params.name !== '' && route.params.name !== undefined && isTrue) {
+        if (route.params.name !== '' &amp;&amp; route.params.name !== undefined &amp;&amp; isTrue) {
             isTrue = false;
             let newArray = [];
             for (let i = 0; i &lt; people.length; i++) {
@@ -121,7 +121,7 @@
             route.params = {};
         }
 
-        const addPerson = () => {
+        const addPerson = () =&gt; {
             if (newPerson) {
                     setPeople(prev =&gt; {
                         let newArrPers = [...prev, {
@@ -156,7 +156,7 @@
                 </section>
             </main>
             <footer>
-                <p style="font-size: 14px; background-color: slategray">2020 RSSchool</p>
+                <p class="p-footer">2020 RSSchool</p>
             </footer>
         </div>
     </body>
