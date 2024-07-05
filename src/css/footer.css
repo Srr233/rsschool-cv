@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}

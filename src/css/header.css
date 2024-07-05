@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: 2;
+}
+
+.header__ul {
+    display: flex;
+}
+
+.header__ul li {
+    padding: 0 10px;
+}
