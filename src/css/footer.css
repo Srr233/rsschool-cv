@@ -1,0 +1,24 @@
+footer {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 4;
+
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer li {
+    padding: 0 10px;
+}
+footer div {
+    padding: 0 10px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+}

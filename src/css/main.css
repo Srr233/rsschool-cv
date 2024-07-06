@@ -1,0 +1,130 @@
+html {
+    font-family: "Baskervville SC", sans-serif;
+}
+
+main {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    max-height: 600px;
+}
+
+.content-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-two);
+    color: var(--color-third);
+}
+
+.content-wrapper img {
+    display: block;
+    margin: 0 auto;
+}
+
+.content-wrapper section {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.left-bar-info {
+    background-color: var(--color-one);
+    color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.left-bar-info img {
+    max-width: 325px;
+}
+
+.left-bar-info h2 {
+    font-size: 30px;
+}
+
+.left-bar-info li {
+    font-size: 20px;
+}
+
+.images-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images-skills img {
+    width: 60px;
+}
+
+.education-content-wrapper img {
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-wrapper section {
+}
+
+.projects-wrapper h2 {
+    align-self: flex-start;
+}
+.projects-wrapper a {
+    display: block;
+}
+.projects-wrapper img {
+    max-width: 600px;
+}
+
+@keyframes slide-to-zero {
+    from {
+        bottom: 200%;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes slide-form-left {
+    from {
+        right: 200%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.animation-left-bar-name {
+    position: relative;
+    animation: 0.9s slide-to-zero;
+}
+
+.animation-left-bar-img {
+    position: relative;
+    animation: 2s slide-form-left;
+    transition: 1s;
+}
+
+.opacity-off {
+    opacity: 0;
+}
+
+.animation-left-bar-contacts {
+    position: relative;
+    animation: 1.1s slide-to-zero;
+}
