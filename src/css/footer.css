@@ -19,6 +19,13 @@ footer div {
     padding: 0 10px;
 }
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+footer div a:hover {
+    background: none !important;
+}
+footer div a {
+    background: none !important;
 }
