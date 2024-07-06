@@ -1,13 +1,23 @@
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
+.nav {
+    width: 100%;
 }
 
 .header__ul {
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .header__ul li {
