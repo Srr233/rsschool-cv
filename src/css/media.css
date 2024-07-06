@@ -1,0 +1,30 @@
+@media screen and (max-width: 1030px) {
+    img {
+        max-width: 280px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    .left-bar-info {
+        align-items: center;
+    }
+    .left-bar-info h1 {
+        align-self: flex-start;
+    }
+    .animation-left-bar-contacts ul {
+        display: flex;
+    }
+    .animation-left-bar-contacts li {
+        padding: 0 10px;
+    }
+    .animation-left-bar-contacts li a {
+        text-wrap: nowrap;
+    }
+
+    .content-wrapper {
+        padding: 10px 20px;
+    }
+}
