@@ -76,9 +76,6 @@ main {
     align-items: center;
 }
 
-.projects-wrapper section {
-}
-
 .projects-wrapper h2 {
     align-self: flex-start;
 }
